@@ -9,6 +9,9 @@ export default class App extends React.Component {
      <View style={{flexDirection: "row"}}>
 
       <View style ={styles.divider}/>
+      <Text style ={styles.title}>
+        ToDo <Text style= {{fontWeight :"300", color:colors.purple}}>List</Text>
+      </Text>
      </View>
     </View>
   );
@@ -23,7 +26,11 @@ const styles = StyleSheet.create({
   },
 
   divider : {
-    backgroundColor : colors
+    backgroundColor : colors,
+    
+    height : 1,
+    flex : 1,
+    alignSelf : "center",
   }
 
 
